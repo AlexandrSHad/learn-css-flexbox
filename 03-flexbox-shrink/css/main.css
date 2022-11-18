@@ -1,0 +1,26 @@
+/* Your code goes here */
+.container {
+  border: 1px solid #fff;
+  width: 400px;
+  display: flex;
+  flex-flow: row;
+}
+
+/* by default flex-shrink is equal to 1 */
+/* so items will take only available space within container 400px / 4 */
+
+.container div {
+  width: 200px;
+  margin: 0px;
+  /* if you comment this padding the 2-nd item won't be shrunk to 40px */
+  /* this is how flexbox works to not to brake entire layout */
+  padding: 0px;
+}
+
+.container div:nth-child(2) {
+  /* initial 200px - 400px(space to shrink) / 5(1+2+1+1) * 2(current flex-shrink) = 40px */
+  flex-shrink: 2;
+}
+
+.container div:nth-child(3) {
+}
