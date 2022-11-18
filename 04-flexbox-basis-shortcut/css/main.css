@@ -1,0 +1,34 @@
+/* Your code goes here */
+.container {
+  border: 1px solid #fff;
+  width: 800px;
+  display: flex;
+  flex-flow: row;
+}
+
+/* How browser calculate size:
+- look at the flex-basis
+- container has a) a space left or b) is overfull
+- look at flex-grow (a) or flex-shrink (b)
+- calculate portions each item will grow or shrink
+- add that to base size
+*/
+
+.container div {
+  /* recomended way to define width(flex-direction: row) / heigth(flex-direction: column) */
+  /* default value is auto - each item take enough space to display content */
+  /* flex-basis: 200px; */
+
+  /* shortcut: flex: <flex-grow> <flex-shrink> <flex-basis> */
+  flex: 1 1 25%;
+
+  margin: 0px;
+}
+
+.container div:nth-child(2) {
+  /* set flex to 1 1 15% to see the effect */
+  /* flex-grow: 2; */
+}
+
+.container div:nth-child(3) {
+}
