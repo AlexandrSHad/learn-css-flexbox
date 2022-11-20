@@ -1,0 +1,28 @@
+/* Your code goes here */
+
+.media {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid #000;
+}
+
+.media > .figure {
+  width: 20%;
+  flex: 1 1 30%;
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.figure > img {
+  height: 100%;
+  width: 100%;
+}
+
+.media > .media-body {
+  flex: 1 1 70%;
+  background-color: rgba(255, 120, 255, 0.5);
+}
+
+.media-body p {
+  margin: 0 10px 20px 10px;
+}
