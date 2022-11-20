@@ -1,0 +1,22 @@
+/* Your code goes here */
+
+.vcenter {
+  display: flex;
+  border: 1px solid #fff;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  width: 400px;
+}
+
+li {
+  list-style-type: none;
+  flex-basis: 25%;
+}
