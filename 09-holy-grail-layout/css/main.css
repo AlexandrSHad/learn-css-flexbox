@@ -1,0 +1,50 @@
+/* Your code goes here */
+
+body {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* take all available height */
+  min-height: 100vh;
+}
+
+#header {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#main {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+}
+
+#content {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+}
+
+#secondary {
+  order: -1;
+  padding: 10px;
+  flex-basis: 200px;
+}
+
+#tertiary {
+  order: 1;
+  padding: 10px;
+  flex-basis: 200px;
+}
+
+#footer {
+  padding: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#header, #main, #content, #secondary, #tertiary, #footer {
+  border: 1px solid #fff;
+}
